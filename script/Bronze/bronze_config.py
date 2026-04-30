@@ -1,6 +1,6 @@
 extract_config = [
 
-    
+
     {
         'table_name': 'bronze.crm_cust_info',
         'path': '/Volumes/workspace/bronze/source_systems/source_crm/cust_info.csv',

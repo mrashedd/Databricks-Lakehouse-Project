@@ -1,0 +1,19 @@
+[tool.ruff]
+target-version = "py310"
+line-length = 125
+
+# This excludes the notebooks that contain SQL logic, 
+# which is why you are seeing syntax errors like 'CREATE VIEW'
+extend-exclude = [
+    "script/Gold/*.ipynb",
+    "script/Silver/*.ipynb"
+]
+
+[tool.ruff.lint]
+# E = Error, F = Pyflakes (Logic), W = Warning
+select = ["E", "F", "W"]
+
+# F821: Ignore 'spark'/'dbutils' undefined errors
+# W291: Ignore trailing whitespace
+# E501: Ignore line length
+ignore = ["F821", "W291", "E501"]
