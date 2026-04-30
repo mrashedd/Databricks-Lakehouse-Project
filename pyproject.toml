@@ -1,2 +1,0 @@
-[tool.ruff.lint]
-globals = ["spark", "dbutils", "display", "getArgument"]
